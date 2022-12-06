@@ -1,0 +1,286 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+
+  max-width: 130rem;
+  margin: 0 auto;
+  height: 9.6rem;
+}
+
+.logo {
+  height: 10rem;
+}
+
+.main-nav {
+}
+
+.main-nav-list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2rem;
+  list-style: none;
+}
+
+.main-nav-link:visited,
+.main-nav-link:link {
+  text-decoration: none;
+  color: #999;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #666;
+}
+
+.main-nav-link.nav-home {
+  font-weight: 700;
+  color: #000;
+}
+
+.main-nav-link.nav-SignUp:link,
+.main-nav-link.nav-SignUp:visited {
+  padding: 2rem 4rem;
+  background-color: #fd5056;
+  color: #fff;
+  border-radius: 1.2rem;
+}
+
+.main-nav-link.nav-SignUp:hover,
+.main-nav-link.nav-SignUp:active {
+  background-color: #ff3c3c;
+}
+
+/* Hero section */
+.hero-section {
+  padding-top: 6rem;
+  height: fit-content;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 8rem;
+  align-items: center;
+}
+
+.heading-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+  color: #999;
+}
+
+.hero-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0px 10px 2rem #bbb;
+}
+
+.hero-card-items {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.card-icon {
+  color: #e67e22;
+  font-size: 2.4rem;
+}
+
+.card-item {
+  font-size: 1.8rem;
+}
+
+.card-item p:nth-child(1) {
+  margin-bottom: 1rem;
+}
+
+.btn-search:link,
+.btn-search:visited {
+  padding: 1rem 4rem;
+  background-color: #fd5056;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.btn-search:hover,
+.btn-search:active {
+  background-color: #ff3c3c;
+}
+
+.hero-img {
+  width: 40rem;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* About Section */
+.about-section {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 6rem 3.2rem;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+.about-img-box {
+  position: relative;
+}
+
+.about-img {
+  width: 40rem;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.about-location-icon {
+  color: #ff3c3c;
+  font-size: 2.4rem;
+}
+
+.about-location {
+  padding: 2rem;
+  color: #000;
+  background-color: #fff;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  box-shadow: 0 5px 3rem #333;
+
+  position: absolute;
+  top: 30%;
+  left: -3rem;
+}
+
+.about-text-box .heading-description {
+  margin-bottom: 3rem;
+}
+
+.experience-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.experience-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: ;
+  gap: 1rem;
+}
+
+.experience-number {
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.experience-text {
+  font-size: 1.6rem;
+  color: #999;
+  font-weight: 600;
+}
+
+.about-learn-more:link,
+.about-learn-more:visited {
+  padding: 1rem 4rem;
+  background-color: #fd5056;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.about-learn-more:hover,
+.about-learn-more:active {
+  background-color: #ff3c3c;
+}
+
+/* Service Section */
+.service-section {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 6rem 3.2rem;
+}
+
+.service-section .heading-secondary {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.service-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem 3rem;
+  box-shadow: 0 1rem 3rem #ddd;
+  border-radius: 1rem;
+}
+
+.service-item:nth-child(2) {
+  background-color: #55d7ff;
+}
+
+.service-item:nth-child(2) .heading-tertiary,
+.service-item:nth-child(2) .heading-description {
+  color: #fff;
+}
+
+.service-item:nth-child(2) .service-icon {
+  background-color: #fff;
+}
+
+.service-icon-box {
+  padding: 2rem 0;
+}
+
+.service-icon {
+  font-size: 5rem;
+  color: #fd5056;
+  padding: 2rem;
+  box-shadow: 0 1rem 3rem #999;
+  border-radius: 1.2rem;
+}
+
+.service-text-box {
+}
